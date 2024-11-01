@@ -1,5 +1,5 @@
 ---
-title: 02.Usage
+title: 02. Usage
 author: Leo
 date: 2024-10-29
 layout: default
