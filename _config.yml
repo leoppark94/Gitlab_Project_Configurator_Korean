@@ -10,10 +10,3 @@ aux_links:
     - "//github.com/leoppark94/Gitlab_Project_Configurator_Korean"
 
 aux_links_new_tab: true
-
-defaults:
-  - scope:
-      path: "docs"
-      type: "pages"
-    values:
-      layout: "default"
