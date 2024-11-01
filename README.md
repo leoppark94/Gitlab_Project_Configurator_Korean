@@ -8,4 +8,6 @@ GPC는 하나 이상의 Gitlab 프로젝트 설정을 자동으로 구성할 수
 
 해당 문서는 github pages 를 통해 호스팅 되고 있습니다
 
-다음 링크에서 확인하실 수 있습니다 [클릭 -> leoppark94.github.io](https://leoppark94.github.io/Gitlab_Project_Configurator_Korean)
+다음 링크에서 확인하실 수 있습니다 
+
+[leoppark94.github.io](https://leoppark94.github.io/Gitlab_Project_Configurator_Korean)
