@@ -1,8 +1,9 @@
 ---
-title: Command Line Interface
+title: 04. Command Line Interface
 author: Leo
 date: 2024-11-01
 layout: default
+parent: OfficialDocs
 ---
 
 이것은 명령줄 인터페이스 도움말입니다. CLI는 로컬 테스트와 개발 중에 유용할 수 있지만, Gitlab-Project-Configurator의 주요 사용처는 Gitlab CI 파이프라인입니다.

@@ -1,8 +1,9 @@
 ---
-title: Usage
+title: 02.Usage
 author: Leo
 date: 2024-10-29
 layout: default
+parent: OfficialDocs
 ---
 
 다음 문서는 [document](https://grouperenault.gitlab.io/gitlab-project-configurator/docs/usage.html) 를 기반으로 만들어졌습니다.  

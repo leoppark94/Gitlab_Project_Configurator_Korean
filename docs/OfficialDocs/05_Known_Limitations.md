@@ -1,8 +1,9 @@
 ---
-title: Known_Limitations
+title: 05. Known_Limitations
 author: Leo
 date: 2024-11-01
 layout: default
+parent: OfficialDocs
 ---
 알려진 한계점에 대해서 다루고 있는 문서입니다.
 

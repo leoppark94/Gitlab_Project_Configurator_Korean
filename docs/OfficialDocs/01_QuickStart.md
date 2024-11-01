@@ -1,8 +1,9 @@
 ---
-title: Qucik Guide
+title: 01. Qucik Guide
 author: Leo
 date: 2024-10-29
 layout: default
+parent: OfficialDocs
 ---
 
 다움 문서는 [document](https://grouperenault.gitlab.io/gitlab-project-configurator/docs/readme.html) 를 기반으로 만들어졌습니다.

@@ -1,8 +1,9 @@
 ---
-title: Releases
+title: 06. Releases
 author: Leo
 date: 2024-11-01
 layout: default
+parent: OfficialDocs
 ---
 
 프로젝트에서 GPC를 실행하는 주요 방법은, Gitlab-ci파일에서 직접 docker image를 실행하는 방법입니다.
