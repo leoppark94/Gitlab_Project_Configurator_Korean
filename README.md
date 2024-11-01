@@ -1,174 +1,35 @@
-# just-the-docs-template
+# Gitlab Project Configurator 한국어판
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+## Welcome to Gitlab Project Configurator
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+GPC는 하나 이상의 Gitlab 프로젝트 설정을 자동으로 구성할 수 있도록 해줍니다.
+![GPC_Logo](https://grouperenault.gitlab.io/gitlab-project-configurator/docs/_images/gpc-icon.png)
 
-More specifically, the created site:
+프로젝트 구성을 버전 관리된 구성으로 정의할 수 있으며, IaC 처럼 gitlab의 설정을 관리할 수 있도록 합니다.(대표적으로 terraform 처럼)
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+해당 문서는 github pages 를 통해 호스팅 되고 있습니다
 
-To get started with creating a site, simply:
+다음 링크에서 확인하실 수 있습니다 [leoppark94.github.io](https://leoppark94.github.io/Gitlab_Project_Configurator_Korean)
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+### GPC의 목적
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+- 한 번에 많은 Gitlab 프로젝트를 구성할 수 있습니다.
+- 프로젝트에 적용하기 전에 변경 사항이 Gitlab에서 지원되는지 테스트 할 수 있습니다.
+- 모든 프로젝트의 구성을 유지하도록 보장합니다.
+- 일부 구성을 쉽게 합니다 (ex. JIRA 플러그인 또는 Webhook).
+- Gitlab의 CI 토큰과 같은 중요한 요소를 갱신/업데이트합니다.
+- 모든 프로젝트에 대해 파생을 허용하며, 모든 내용은 YAML로 설명되어 주석과 추적 가능성을 추가할 수 있습니다.
+- stdout, HTML 보고서 또는 JSON 파일과 같은 여러 방법으로 실행 결과를 제공합니다.
 
-After completing the creation of your new site on GitHub, update it as needed:
+GPC는 다른 설정에는 손을 대지 않고 변경하고 싶은 일부 설정만 변경합니다.  
+이는 "모두가 원하는 대로 하는" 것과 "모든 프로젝트가 이러저러 해야 한다"는 사이의 원활한 전환을 가능하게 합니다.  
 
-## Replace the content of the template pages
+### 추가 정보
 
-Update the following files to your own content:
+이 github pages 는 [Gitlab-Project-Configurator Gitlab](https://gitlab.com/grouperenault/gitlab-project-configurator ) 웹사이트와  
+[Gitlab Project Configurator’s documentation](https://grouperenault.gitlab.io/gitlab-project-configurator/docs/index.html) 을 기반으로 만들어졌습니다.
+최신화가 안될 수 있으니 가장 최신의 정보를 위해서는 위의 링크를 잠고해주세요.
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+공부하기 위해서 번역하면서 만든 웹사이트입니다.
 
-## Changing the version of the theme and/or Jekyll
-
-Simply edit the relevant line(s) in the `Gemfile`.
-
-## Adding a plugin
-
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
-
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
-
-- Add the following to your site's `Gemfile`:
-
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
-
-- And add the following to your site's `_config.yml`:
-
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
-
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
-
-## Publishing your site on GitHub Pages
-
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
-
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
-
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
-
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
-
-2.  Push your updated `_config.yml` to your site on GitHub.
-
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
-
-## Building and previewing your site locally
-
-Assuming [Jekyll] and [Bundler] are installed on your computer:
-
-1.  Change your working directory to the root directory of your site.
-
-2.  Run `bundle install`.
-
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
-
-    The built site is stored in the directory `_site`.
-
-## Publishing your built site on a different platform
-
-Just upload all the files in the directory `_site`.
-
-## Customization
-
-You're free to customize sites that you create with this template, however you like!
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-## Hosting your docs from an existing project repo
-
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
-
-### Copy the template files
-
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
-
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
-
-### Modify the GitHub Actions workflow
-
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
-
-1.  Set the default `working-directory` param for the build job.
-
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
-
-2.  Set the `working-directory` param for the Setup Ruby step.
-
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
-
-3.  Set the path param for the Upload artifact step:
-
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: "docs/_site/"
-    ```
-
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
-
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
-
-## Licensing and Attribution
-
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
+공식문서의 사실상 번역본(?) 이 아닌, 제가 직접 만든 체험 가이드가 궁금하신 분은 `99_MyExperience.md` 를 참고해주세요.
