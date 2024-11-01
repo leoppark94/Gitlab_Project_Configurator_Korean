@@ -1,26 +1,12 @@
 title: GPC 한국어판
 description: GPC 프로젝트를 사용하는 방법을 다루고 있습니다
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.10.0
 
 url: 'https://leoppark94.github.io'
 baseurl: '/Gitlab_Project_Configurator_Korean'
 
-permalink: pretty
-
-search_enabled: true
-
-search:
-  heading_level: 2
-  previews: 3
-  preview_words_before: 5
-  preview_words_after: 10
-  tokenizer_separator: /[\s/]+/
-  rel_url: true
-  button: false
-  focus_shortcut_key: 'k'
-
 aux_links:
   "Original Repository":
     - "//github.com/leoppark94/Gitlab_Project_Configurator_Korean"
-    
+
 aux_links_new_tab: true
