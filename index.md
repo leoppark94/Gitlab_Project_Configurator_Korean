@@ -1,6 +1,6 @@
 ---
-title: Gitlab Project Configurator 한국어판
-layout: home
+title: GPC 한국어판
+layout: default
 ---
 ## Welcome to Gitlab Project Configurator
 
