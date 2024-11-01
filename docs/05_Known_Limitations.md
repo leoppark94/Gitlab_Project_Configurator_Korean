@@ -2,7 +2,7 @@
 title: Known_Limitations
 author: Leo
 date: 2024-11-01
-layout: post
+layout: default
 ---
 알려진 한계점에 대해서 다루고 있는 문서입니다.
 

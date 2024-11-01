@@ -2,7 +2,7 @@
 title: Configuration Files Reference
 author: Leo
 date: 2024-10-29
-layout: post
+layout: default
 ---
 
 이 문서는 GPC에서 사용할 수 있는 프로젝트 설정 파일을 설명합니다.

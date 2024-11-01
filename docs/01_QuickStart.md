@@ -2,7 +2,7 @@
 title: Qucik Guide
 author: Leo
 date: 2024-10-29
-layout: post
+layout: default
 ---
 
 다움 문서는 [document](https://grouperenault.gitlab.io/gitlab-project-configurator/docs/readme.html) 를 기반으로 만들어졌습니다.

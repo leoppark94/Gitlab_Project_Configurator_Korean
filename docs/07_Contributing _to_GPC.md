@@ -2,7 +2,7 @@
 title: Contributing
 author: Leo
 date: 2024-11-01
-layout: post
+layout: default
 ---
 
 기여하려면, [GPC Repository](https://gitlab.com/grouperenault/gitlab-project-configurator) 에 Merge Request 를 생성해 주세요!
